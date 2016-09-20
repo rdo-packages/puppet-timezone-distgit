@@ -7,8 +7,8 @@
 
 
 Name:           puppet-timezone
-Version:        XXX
-Release:        XXX
+Version:        3.3.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage timezone settings via Puppet.
 License:        Apache License, Version 2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/timezone/
 
 
 %changelog
+* Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 3.3.0-1.cf62f1b.git
+- Newton update 3.3.0 (cf62f1bb34c2704afac9e2d37244bbf0c6b3ac95)
+
 
