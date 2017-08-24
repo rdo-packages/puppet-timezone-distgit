@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-timezone
-%global commit cf62f1bb34c2704afac9e2d37244bbf0c6b3ac95
+%global commit 62ba3ccadf13ee8dbd786b7ade29096fc3ab40b6
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-timezone
-Version:        XXX
-Release:        XXX
+Version:        3.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage timezone settings via Puppet.
 License:        ASL 2.0
 
@@ -49,5 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/timezone/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 3.5.0-1.62ba3ccgit
+- Pike update 3.5.0 (62ba3ccadf13ee8dbd786b7ade29096fc3ab40b6)
 
 
