@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-timezone
-%global commit cf62f1bb34c2704afac9e2d37244bbf0c6b3ac95
+%global commit 841bd52f23326f8385c4c1ee1f25bdbf6e0d6fa9
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-timezone
-Version:        XXX
-Release:        XXX
+Version:        5.0.2
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage timezone settings via Puppet.
 License:        ASL 2.0
 
@@ -49,5 +49,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/timezone/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 5.0.2-1.841bd52git
+- Update to post 5.0.2 (841bd52f23326f8385c4c1ee1f25bdbf6e0d6fa9)
+
 
 
