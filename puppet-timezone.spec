@@ -53,4 +53,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/timezone/
 - Update to post 5.1.1 (21b4a581ff226b7945c2a5e43d060d1d57667352)
 
 
-
